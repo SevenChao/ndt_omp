@@ -106,10 +106,9 @@ namespace pclomp
 
 		/** \brief Empty destructor */
 		virtual ~NormalDistributionsTransform() {}
-
-    void setNumThreads(int n) {
-      num_threads_ = n;
-    }
+		
+		/** \brief Set the Num Threads */
+    	void setNumThreads(int n) { num_threads_ = n; }
 
 		/** \brief Provide a pointer to the input target (e.g., the point cloud that we want to align the input source to).
 		  * \param[in] cloud the input point cloud target
